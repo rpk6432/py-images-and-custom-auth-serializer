@@ -54,6 +54,7 @@ class Movie(models.Model):
     duration = models.IntegerField()
     image = models.ImageField(
         null=True,
+        blank=True,
         upload_to=movie_image_path,
     )
     genres = models.ManyToManyField(Genre)
